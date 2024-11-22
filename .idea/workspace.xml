@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cada2bf1-ffb4-4967-b135-9b4e3c911d9c" name="Changes" comment="changes">
+    <list default="true" id="cada2bf1-ffb4-4967-b135-9b4e3c911d9c" name="Changes" comment="removed post request from main branch and moved to my branch for testing in postman">
+      <change afterPath="$PROJECT_DIR$/frontend/src/AddContacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/SideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +24,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_COMMON_BRANCH" value="main" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -45,7 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Post-Request-Test",
     "last_opened_file_path": "/Users/thabang/Desktop/Fall 2024/COMS 319/assignment4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -71,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732243922339</updated>
-      <workItem from="1732243924275" duration="8352000" />
+      <workItem from="1732243924275" duration="15171000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -81,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732252483417</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removed post request from main branch and moved to my branch for testing in postman">
+      <option name="closed" value="true" />
+      <created>1732254683582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732254683582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="removed post request from main branch and moved to my branch for testing in postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed post request from main branch and moved to my branch for testing in postman" />
   </component>
 </project>
