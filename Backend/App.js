@@ -82,38 +82,6 @@ app.get("/contact", (req, res) => {
 
 
 //----------------------------------------------- Post Contacts ------------------------------------------------------//
-// Endpoint to add a new contact to the contact table, including handling image uploads.
-app.post("/contact", upload.single("image"), (req, res) => {
-    const { contact_name, phone_number, message } = req.body;
-
-    // Step 1: Check if the contact_name already exists in the database
-    const checkQuery = "SELECT * FROM contact WHERE contact_name = ?";
-    db.query(checkQuery, [contact_name], (checkErr, checkResult) => {
-        if (checkErr) {
-            console.error("Database error during validation:", checkErr);
-            return res.status(500).send({ error: "Error checking contact name: " + checkErr.message });
-        }
-
-        if (checkResult.length > 0) {
-            // If contact_name exists, send a conflict response
-            return res.status(409).send({ error: "Contact name already exists." });
-        }
-
-        // Step 2: Handle image URL
-        const imageUrl = req.file ? `/uploads/${req.file.filename}` : null; // If an image is uploaded, save the filename
-
-        // Step 3: Insert the new contact into the database
-        const query = "INSERT INTO contact (contact_name, phone_number, message, image_url) VALUES (?, ?, ?, ?)";
-        db.query(query, [contact_name, phone_number, message, imageUrl], (err, result) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send({ error: "Error adding contact: " + err });
-            } else {
-                res.status(201).send("Contact added successfully");
-            }
-        });
-    });
-});
 
 
 
