@@ -49,9 +49,8 @@ if (!fs.existsSync("uploads")) {
 }
 
 
-//------------------------------------------------- Middleware -------------------------------------------------------//
+//------------------------------------------------- Express ----------------------------------------------------------//
 // Middleware in App.js to handle JSON requests and serve static files.
-// Middleware setup
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON requests
 app.use(express.json()); // Alternative for JSON parsing
